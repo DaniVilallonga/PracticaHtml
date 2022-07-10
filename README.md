@@ -78,7 +78,6 @@ You may need Visual Studio or any other code editor of your choice.
 ### Installation
 
 <p>You do not require any specific software.</p>
-   ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
