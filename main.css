@@ -6,7 +6,6 @@ body{
 
 *{
     margin: auto;
-    width: 100%;
     font-family: 'Verdana';
     border-color: lightgray;
     border-radius: 5px;
@@ -44,7 +43,7 @@ body{
 
 .descripcion_boton:hover{
     background-color: rgb(0, 0, 0);
-    color:rgb(255, 189, 65)
+    color:rgb(255, 189, 65);
 }
 
 .proyectos{
@@ -72,22 +71,9 @@ body{
     font-size: 20px;
 }
 
-.proyectos_slideshow > div{
+.proyectos_slideshow > div > img{
     width: 100%;
     height: 100%;
-}
-
-.slide1{
-    background-color: yellow;
-    background-image: url(/images/lago.jpg);
-}
-
-.slide2{
-    background-color: red;
-}
-
-.slide3{
-    background-color: blue;
 }
 
 .proyectos_selector{
@@ -97,7 +83,7 @@ body{
 }
 
 .slideshow_dot{
-    background-color: white;
+    background-color: rgb(255, 189, 65);
     width: 16px;
     height: 16px;
     border-color: black;
@@ -118,12 +104,74 @@ body{
     background-color: rgba(255, 186, 107, 0.582);
 }
 
-@keyframes skills_bars{
-    
+.skills_container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.skills_individual{
+.skills h2{
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 5%;
+    margin-bottom: 5px;
+    color: black;
+    font-size: 16px;
+}
 
+.progress_bar{
+    background: #959595;
+    width: 300px;
+    height: 5%;
+    border-radius: 5px;
+}
+
+.progress_bar > div{
+    height: 5%;
+    border-radius: 5px;
+    width: 0%;
+    background: orange;
+}
+
+.skills_html{
+    animation: skills_html 1s linear forwards;
+}
+
+.skills_css{
+    animation: skills_css 1s linear forwards;
+}
+
+.skills_js{
+    animation: skills_js 1s linear forwards;
+}
+
+.skills_git{
+    animation: skills_git 1s linear forwards;
+}
+
+@keyframes skills_html {
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes skills_css {
+    100%{
+        width: 70%;
+    }
+}
+
+@keyframes skills_js {
+    100%{
+        width: 60%;
+    }
+}
+
+@keyframes skills_git {
+    100%{
+        width: 40%;
+    }
 }
 
 .form{
@@ -169,11 +217,12 @@ body{
     margin-top: 5%;
 
 }
-/*
-.radios *{
-    vertical-align: left;
+
+.radios{
+    align: ;
+
 }
-*/
+
 .form_github{
     width: 90%;
     margin-top: 5%;
@@ -207,13 +256,14 @@ body{
     margin-top: 5%;
 }
 
-.redes_botones{
-
+.redes_botones > a > img {
+    height: auto;
+    max-width: 50px;
 }
 
+
 .linkedin{
-    height: auto;
-    max-width: 10px;
+
 }
 
 .instagram{
