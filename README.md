@@ -50,7 +50,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![ScreenShot 01](/image/WebPage01.jpeg)
+<img src="images/WebPage01.jpeg" alt="Logo">
+<img src="images/WebPage02.jpeg" alt="Logo">
 
 
 
