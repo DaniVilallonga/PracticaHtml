@@ -1,6 +1,6 @@
 body{
-    background-color: red;
-    max-width: 440px;
+    background-color: rgb(250, 242, 233);
+    max-width: 430px;
     margin: auto;
 }
 
@@ -13,24 +13,28 @@ body{
 }
 
 .nombre{
-    background-color: blue;
+    background-color: rgba(255, 186, 107, 0.582);
     width: 90%;
     height: 10%;
     font-size: 50px;
-    color: aqua;
+    color: rgb(0, 0, 0);
     margin-top: 5%;
 }
 
 .descripcion{
-    background-color: yellow;
+    background-color: rgb(250, 242, 233);
+    background-image: url(/images/prado.jpg);
+    background-size: 100% 85%;
+    background-repeat: no-repeat;
     width: 100%;
     text-align: center;
     font-size: 20px;
     margin-top: 5%;
+    color:rgb(255, 189, 65);
 }
 
 .descripcion_boton{
-    background-color: orange;
+    background-color: rgb(255, 189, 65);
     width: 30%;
     height: 10%;
     text-align: top;
@@ -39,7 +43,8 @@ body{
 }
 
 .descripcion_boton:hover{
-    background-color: red;
+    background-color: rgb(0, 0, 0);
+    color:rgb(255, 189, 65)
 }
 
 .proyectos{
@@ -74,6 +79,7 @@ body{
 
 .slide1{
     background-color: yellow;
+    background-image: url(/images/lago.jpg);
 }
 
 .slide2{
@@ -112,6 +118,10 @@ body{
 
 }
 
+@keyframes skills_bars{
+    
+}
+
 .skills_individual{
 
 }
@@ -119,32 +129,60 @@ body{
 .form{
     background-color: chartreuse;
     width: 100%;
-    height: 300px;
+    height: 1000px;
     margin-top: 5%;
 }
 
 .form_titulo{
-
+    font-size: 30px;
+    height: 5%;
+    background-color: blue;
 }
 
 .form_campos{
 
 }
 
-.form_in{
+.form_name{
+    width: 90%;
+    margin-top: 5%;
+}
 
+.form_lastname{
+    width: 90%;
+    margin-top: 5%;
+}
+
+.form_email{
+    width: 90%;
+    margin-top: 5%;
+}
+
+.form_phone{
+    width: 90%;
+    margin-top: 5%;
 }
 
 .form_conocido{
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
 
+.radios *{
+    vertical-align: left;
 }
 
 .form_github{
-
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
 }
 
 .form_comentario{
-
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
 }
 
 .form_enviar{
@@ -154,11 +192,20 @@ body{
 .redes{
     background-color: black;
     width: 100%;
-    height: 300px;
+    height: 70px;
     margin-top: 5%;
 }
 
 .redes_botones{
+
+}
+
+.linkedin{
+    height: auto;
+    max-width: 10px;
+}
+
+.instagram{
 
 }
 

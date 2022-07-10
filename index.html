@@ -15,9 +15,9 @@
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto error dignissimos possimus amet incidunt modi quisquam magni reprehenderit, quaerat illum nisi veniam ut aliquam minima nulla dolorem repudiandae explicabo ipsa.
         </p>
-        <button class="descripcion_boton" href="#form">
-            <p>Contacto</p>
-        </button>
+        <a href="#form">
+            <button class="descripcion_boton" type="button">Contact</button>
+        </a>
     </div>
 
     <div class="proyectos">
@@ -44,6 +44,7 @@
         <div class="skills_individual">
             <div class="skills_individual">
                 <p>Html</p>
+                <div class=""></div>
             </div>
             <div class="skills_individual">
                 <p>CSS</p>
@@ -59,44 +60,72 @@
 
     <div class="form">
         <div class="form_titulo">
-
+            <p>Contact Form</p>
         </div>
-        
-        <div class="form_campos">
-            <div class="form_in">
-
+        <form id="form_contact">
+            <div class="form_campos">
+                <div class="form_name">
+                    <input type="text" placeholder="First Name" id="firstname" data-required="true" data-error-message="Your First Name is required">
+                </div>
+                <div class="form_lastname">
+                    <input type="text" placeholder="Last Name" id="lastname" data-required="true" data-error-message="Your Last Name is required">
+                </div>
+                <div class="form_email">
+                    <input type="email" placeholder="Email Adress" id="email" data-required="true" data-error-message="Your Email Adress is required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                </div>
+                <div class="form_phone">
+                    <input type="text" placeholder="Phone Number" id="phone" data-required="false">
+                </div>
             </div>
-            <div class="form_in">
 
+            <div class="form_conocido">
+                <fieldset required>
+                    <legend>How did you met me?</legend>
+                    <div class="radios">
+                        <input type="radio" id="fp" name="conocido" value="fp">
+                        <label for="fp">Technical School</label>
+                    </div>
+                    <div class="radios">
+                        <input type="radio" id="school" name="conocido" value="school">
+                        <label for="school">Institute</label>
+                    </div>
+                    <div class="radios">
+                        <input type="radio" id="bootcamp" name="conocido" value="bootcamp">
+                        <label for="bootcamp">Keep Coding</label>
+                    </div>
+                    <div class="radios">
+                        <input type="radio" id="github" name="conocido" value="github">
+                        <label for="github">Git Hub</label>
+                    </div>
+                </fieldset>
             </div>
-            <div class="form_in">
 
+            <div class="form_github">
+                <input type="text" placeholder="Gut Hub tag" id="github_tag">
             </div>
-            <div class="form_in">
 
+            <div class="form_comentario">
+                <textarea id="comment" name="comment" rows="4" cols="30" maxlength="180">
+
+                </textarea>
             </div>
-        </div>
 
-        <div class="form_conocido">
-
-        </div>
-
-        <div class="form_github">
-
-        </div>
-
-        <div class="form_comentario">
-
-        </div>
-
-        <div class="form_enviar">
-
-        </div>
+            <div class="form_enviar">
+                <a href="maito:dani.vilallonga@hotmail.com">
+                    <button class="form_button" type="button">Send</button>
+                </a>
+            </div>
+        </form>
     </div>
 
     <div class="redes">
         <div class="redes_botones">
-
+            <a href="https://es.linkedin.com/in/daniel-vilallonga-garcia-60b448108">
+                <img id="linkedin" src="/images/linkedin.png" >
+            </a>
+            <a href="https://instagram.com">
+                <img src="/images/instagram.png">
+            </a>
         </div>
     </div>
 
