@@ -62,19 +62,19 @@
         <div class="form_titulo">
             <p>Contact Form</p>
         </div>
-        <form id="form_contact">
+        <form id="form_contact" action="mailto:dani.vilallonga@hotmail.com">
             <div class="form_campos">
                 <div class="form_name">
-                    <input type="text" placeholder="First Name" id="firstname" data-required="true" data-error-message="Your First Name is required">
+                    <input type="text" name="first name" placeholder="First Name" id="firstname" data-required="true" data-error-message="Your First Name is required">
                 </div>
                 <div class="form_lastname">
-                    <input type="text" placeholder="Last Name" id="lastname" data-required="true" data-error-message="Your Last Name is required">
+                    <input type="text" name="last name" placeholder="Last Name" id="lastname" data-required="true" data-error-message="Your Last Name is required">
                 </div>
                 <div class="form_email">
-                    <input type="email" placeholder="Email Adress" id="email" data-required="true" data-error-message="Your Email Adress is required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    <input type="email" name="email" placeholder="Email Adress" id="email" data-required="true" data-error-message="Your Email Adress is required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                 </div>
                 <div class="form_phone">
-                    <input type="text" placeholder="Phone Number" id="phone" data-required="false">
+                    <input type="text" name="phone" placeholder="Phone Number" id="phone" data-required="false">
                 </div>
             </div>
 
@@ -111,9 +111,7 @@
             </div>
 
             <div class="form_enviar">
-                <a href="maito:dani.vilallonga@hotmail.com">
-                    <button class="form_button" type="button">Send</button>
-                </a>
+                <input type="submit" class="form_button">
             </div>
         </form>
     </div>
